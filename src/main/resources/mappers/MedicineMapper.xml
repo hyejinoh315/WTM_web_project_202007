@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MedicineMapper">
+
+	<!-- Beans의 멤버변수(property)이름과 대상 테이블의 컬럼(column)을 연결한다. -->
+	<resultMap id="medicineMap"
+		type="com.spring.wtm.model.Medicine">
+		<result property="medId" column="med_id" />
+		<result property="itemSeq" column="item_seq" />
+		<result property="itemName" column="item_name" />
+		<result property="classNo" column="class_no" />
+		<result property="etcOtcName" column="etc_otc_name" />
+		<result property="entpName" column="entp_name" />
+		<result property="chart" column="chart" />
+		<result property="drungShape" column="drug_shape" />
+		<result property="color" column="color" />
+		<result property="line" column="line" />
+		<result property="formCode" column="form_code_name" />
+		<result property="drugImg" column="drug_img" />
+		<result property="material" column="material" />
+		<result property="storageMethod" column="storage_method" />
+		<result property="effectData" column="effect_data" />
+		<result property="usageData" column="usage_data" />
+		<result property="warningData" column="warning_data" />
+
+	</resultMap>
+
+	<!-- 약 정보 조회 : 단일행 조회를 위한 기능 정의 -->
+	<select id="selectItem"
+		parameterType="com.spring.wtm.model.Medicine" resultMap="medicineMap">
+		SELECT med_id, item_seq, item_name, class_no, etc_otc_name, entp_name,
+		chart, drug_shape, color, line, form_code_name,
+		drug_img, material, storage_method, effect_data, usage_data, warning_data FROM
+		medicine"" WHERE med_id = #{medId}
+	</select>
+
+
+	<!-- 다중행 조회를 위한 기능 정의 -->
+
+
+	<!-- 데이터 수 조회를 위한 기능 정의 -->
+
+
+	<!-- 데이터 저장을 위한 기능 정의 -->
+
+
+	<!-- 데이터 삭제를 위한 기능 정의 -->
+
+
+	<!-- 데이터 갱신을 위한 기능 정의 -->
+
+
+</mapper>

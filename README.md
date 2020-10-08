@@ -175,27 +175,28 @@ Use a password protected SSH key 하위의 주소를 통째로 복사한다
 
 GitHub에 프로젝트가 만들어지면 무조건 GitHub이 원본이고 내 컴퓨터에 있는 파일들은 복사본이므로 작업이 꼬이면 컴퓨터상의 파일은 날려버려라.
 
+충돌시에 pull된 파일 확인도 가능하다!  (형상관리)
 
+# 깃허브 되돌리기
 
-충돌시에 pull된 파일을 열어보면..
+## Push 되돌리기
 
-```
-<<<< HEAD
+```shell
+# push number는 7자리의 일련번호(?) 이다.
+git reset $push_id
 
-내가 작업하던내용
+# 명령어를 수행 후 (add --all 처럼 어떤 문구도 나오지 않음, 문구 나올때도 있음..)
 
-...
-
-=====
-
-다른사람이 업로드한 내용
-
-...
-
->>>> 4gd4f8ej4323kl8klw3jbkwtkl74kl709kelsdl2kl124jk
-
-초안
+# PUSH 강제 되돌리기
+git push --force
 ```
 
+## Commit 되돌리기
 
+```bash
+# 직전 COMMIT 강제 되돌리기
+git reset --hard HEAD^^
+```
+
+- 윈도우에서 `^` 문자는 이스케이프 문자이므로 ^^ 두개를 써준다!
 
