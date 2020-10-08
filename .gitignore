@@ -8,6 +8,9 @@ pom.xml
 # helper 제외
 helper/
 
+# test folder 제외
+src/test/
+
 # 컴파일 결과물 제외
 *.com
 *.class
