@@ -1,6 +1,6 @@
 # WTM Web Project
 
-http://itproject.ezenac.co.kr/wtm/
+2020년 전문 교육기관에서 진행한 팀 프로젝트 입니다. [프로젝트URL](http://itproject.ezenac.co.kr/wtm/)
 
 ## 프로젝트 정보
 
@@ -10,7 +10,7 @@ http://itproject.ezenac.co.kr/wtm/
 
 ### 개발언어/환경
 
-    JAVA / Python / SPRING / Ajax / MySql 8.0 / 웹표준(HTML5/CSS3) / Window10
+    JAVA / Python / SPRING / MyBatis / Ajax / MySql 8.0 / 웹표준(HTML5/CSS3) / JavaScript / jQuery / Git / Linux
 
 ### 팀장/팀원 (담당파트 상세기재)
 
@@ -68,6 +68,3 @@ http://itproject.ezenac.co.kr/wtm/
 | 과정명    | 자바, 파이썬기반 빅데이터분석 머신러닝활용(A) |
 | 훈련기간  | 2020-04-16 ~ 2020-10-08                       |
 
-----------------------------------------------------
-
-## 
